@@ -30242,3 +30242,25 @@ li.nav-sub.mm-listitem .mm-listitem__btn {
   margin: 0 2px;
 }
 
+.mailin {
+  text-align: center; /* Center text by default */
+}
+
+/* Optional: Adjust for different screen sizes */
+@media (max-width: 600px) {
+  .mailin {
+      font-size: 16px; /* Example adjustment for smaller screens */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .mailin {
+      font-size: 18px; /* Example adjustment for medium screens */
+  }
+}
+
+@media (min-width: 1201px) {
+  .mailin {
+      font-size: 20px; /* Example adjustment for larger screens */
+  }
+}
