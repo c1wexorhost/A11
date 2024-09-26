@@ -99,6 +99,8 @@ License: copyright commercial
  * typography.scss
  * -----------------------------------------------
 */
+
+
 ::-moz-selection {
   background: var(--theme-color-dark);
   color: #fff;
@@ -5058,6 +5060,10 @@ Section Title
 @media (max-width: 767px) {
   .boxcar-banner-section-v1 .banner-content .form-tab-pane form .form_boxes {
     width: 100%;
+    height: 52px;
+  }
+  .mailin{
+    width: 12rem;
   }
 }
 
@@ -30243,7 +30249,7 @@ li.nav-sub.mm-listitem .mm-listitem__btn {
 }
 
 .mailin {
-  text-align: center; /* Center text by default */
+  text-align: left; /* Center text by default */
 }
 
 /* Optional: Adjust for different screen sizes */

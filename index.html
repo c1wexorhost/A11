@@ -116,19 +116,11 @@
                     <div class="form-tab-content">
                         <div class="form-tab-content wow fadeInUp" data-wow-delay="300ms">
                             <div class="form-tab-pane current" id="tab-1">
-                                <form action="https://your-email-subscription-endpoint" method="post">
+                                <form action="#" method="post">
                                     
-                                        <div class="form_boxes line-r" style="padding-top: 23px; align-items: center;">
-                                            
-                                                <span >Your Email Address</span>
-                                            
-                                            
-                                              
-
-                                            
-                                        </div>
-                                        <div >
-                                            <input class="mailin" style="margin-left: 5px;" type="email" name="email" placeholder="Enter your email" required>
+                                       
+                                        <div id="v-m" class="form_boxes line-r">
+                                            <input class="mailin" style="margin-left: 5px; width: 40rem;" type="email" name="email" placeholder="Enter your email" required>
                                         </div>
                                         
                                     
@@ -1881,7 +1873,18 @@
 
 <!-- Scroll To Top -->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
-
+<script>
+    if (window.innerWidth <= 767) {
+    document.getElementById('m-v').classList.add();
+}window.onload = function() {
+    if (window.innerWidth <= 767) {
+        const element = document.getElementById('m-v');
+        if (element) {
+            element.classList.add('form_boxes line-r');
+        }
+    }
+};
+</script>
 <script src="js/jquery.js"></script> 
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
