@@ -119,8 +119,8 @@
                                 <form action="#" method="post">
                                     
                                        
-                                        <div id="v-m" class="form_boxes line-r">
-                                            <input class="mailin" style="margin-left: 5px; width: 40rem;" type="email" name="email" placeholder="Enter your email" required>
+                                        <div id="v-m" class="">
+                                            <input class="mailin"  type="email" name="email" placeholder="Enter your email" required>
                                         </div>
                                         
                                     
@@ -1875,15 +1875,21 @@
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
 <script>
     if (window.innerWidth <= 767) {
-    document.getElementById('m-v').classList.add();
-}window.onload = function() {
-    if (window.innerWidth <= 767) {
-        const element = document.getElementById('m-v');
-        if (element) {
-            element.classList.add('form_boxes line-r');
-        }
-    }
-};
+        console.log("class added");
+        
+        var element = document.getElementById("v-m");
+        console.log(element);
+        element.classList.add("form_boxes", "line-r");
+}
+
+// window.onload = function() {
+//     if (window.innerWidth <= 767) {
+//         const element = document.getElementById('m-v');
+//         if (element) {
+//             element.classList.add('form_boxes line-r');
+//         }
+//     }
+// };
 </script>
 <script src="js/jquery.js"></script> 
 <script src="js/popper.min.js"></script>

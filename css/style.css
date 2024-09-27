@@ -5056,6 +5056,10 @@ Section Title
   height: 76px;
   /* Small devices */
 }
+.mailin{
+  margin-left: 5px; 
+  width: 40rem;
+}
 
 @media (max-width: 767px) {
   .boxcar-banner-section-v1 .banner-content .form-tab-pane form .form_boxes {
