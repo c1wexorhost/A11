@@ -7445,6 +7445,39 @@ Section Title
     margin-left: 0;
   }
 }
+@media only screen and (max-width: 767px) {
+  .boxcar-fun-fact-section .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .boxcar-fun-fact-section .counter-block {
+      flex: 1 1 50%;
+      max-width: 50%; /* Each counter-block will take 50% width on mobile */
+  }
+  .why-choose-us-section .choose-us-block {
+    flex: 1 1 50%;  /* Make the blocks take 50% of the width */
+    max-width: 50%;  /* Ensures each block takes up half of the container */
+    padding: 10px;   /* Adjust padding for smaller devices */
+}
+
+.why-choose-us-section .icon-box svg {
+    width: 40px;     /* Reduce the size of the SVG icons */
+    height: 40px;
+}
+
+.why-choose-us-section .content-box h6 {
+    font-size: 14px; /* Reduce the font size */
+}
+
+.why-choose-us-section .choose-us-block .inner-box {
+    padding: 10px;   /* Reduce padding inside the inner box */
+}
+}
+
+
 
 .boxcar-testimonial-section .content-column .inner-column .rating {
   display: -webkit-box;
