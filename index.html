@@ -11,7 +11,8 @@
 <link href="css/mmenu.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
 
-<link rel="shortcut icon" href="images/dc_logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="images/dc_logo.png" type="image/x-icon"><!DOCTYPE html>
+
 <link rel="icon" href="images/dc_icon.png" type="image/x-icon">
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -67,12 +68,10 @@
                         <!-- <div class="btn">
                             <a href="add-listings.html" class="header-btn-two">Add Listing</a>
                         </div> -->
-                        
-                    </div>
                 </div>
                 <!-- Mobile Menu  -->
-            </div>
-        </div>
+            <!-- </div> -->
+        <!-- </div>/ -->
 
         <!-- Header Search -->
         <div class="search-popup">
@@ -98,7 +97,6 @@
     <section class="boxcar-banner-section-v1">
         <div class="container">
             <div class="banner-content">
-                <!-- <span class="wow fadeInUp">Subscribe to our newsletter</span> -->
                 <h2 class="wow fadeInUp" data-wow-delay="100ms">Stay Updated with the Latest Deals</h2>
                 <div class="form-tabs">
                     <ul class="form-tabs-list wow fadeInUp" data-wow-delay="200ms">
@@ -107,58 +105,22 @@
                     <div class="form-tab-content">
                         <div class="form-tab-content wow fadeInUp" data-wow-delay="300ms">
                             <div class="form-tab-pane current" id="tab-1">
-                                <form action="#" method="post">
-                                    
-                                       
-                                        <div id="v-m" class="">
-                                            <input class="email"  type="email" name="email" placeholder="Enter your email" required>
-                                        </div>
-                                        
-                                    
+                                <form id="subscribeForm" action="#" method="post" onsubmit="return sendEmail(event)">
+                                    <div id="v-m" class="form-group">
+                                        <input class="email" type="email" name="email" placeholder="Enter your email" required>
+                                    </div>
                                     <div class="form-submit">
                                         <button type="submit" class="theme-btn"><i class="flaticon-email"></i>Subscribe Now</button>
                                     </div>
                                 </form>
                             </div>
                         </div>
-                        <span class="wow fadeInUp" data-wow-delay="400ms">Get Updates on New Models</span>
-                        <!-- <ul class="model-links">
-                            <li>
-                                <a href="#" title="">
-                                    <i class="flaticon-car"></i>
-                                    SUV
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="">
-                                    <i class="flaticon-car-1"></i>
-                                    Sedan
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="">
-                                    <i class="flaticon-van"></i>
-                                    Hatchback
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="">
-                                    <i class="flaticon-convertible-car"></i>
-                                    Coupe
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" title="">
-                                    <i class="flaticon-electric-car-1"></i>
-                                    Hybrid
-                                </a>
-                            </li>
-                        </ul> -->
                     </div>
                 </div>
             </div>
-        </div>            
+        </div>
     </section>
+    
     <!-- BANNER SECTION END -->
 
     <!-- brand section -->
@@ -173,7 +135,7 @@
                 <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6 pt-3">
                     <div class="inner-box wow fadeInUp">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/BRAND/brand-2.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="images/BRAND/brand-18.png" alt=""></a></figure>
                         </div>
                         <div class="content-box">
                             <h6 class="title"><a href="#">Triumph</a></h6>
@@ -184,7 +146,7 @@
                 <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6 pt-3">
                     <div class="inner-box wow fadeInUp" data-wow-delay="100ms">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/BRAND/brand-1.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="images/BRAND/brand-14.png" alt=""></a></figure>
                         </div>
                         <div class="content-box">
                             <h6 class="title"><a href="#">BMW</a></h6>
@@ -206,7 +168,7 @@
                 <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6 pt-3">
                     <div class="inner-box wow fadeInUp" data-wow-delay="300ms">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/BRAND/brand-4.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="images/BRAND/brand-16.png" alt=""></a></figure>
                         </div>
                         <div class="content-box">
                             <h6 class="title"><a href="#">Kawasaki</a></h6>
@@ -217,7 +179,7 @@
                 <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6 pt-3">
                     <div class="inner-box wow fadeInUp" data-wow-delay="400ms">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/BRAND/brand-5.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="images/BRAND/brand-13.jpg" alt=""></a></figure>
                         </div>
                         <div class="content-box">
                             <h6 class="title"><a href="#">Ducati</a></h6>
@@ -228,7 +190,7 @@
                 <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6 pt-3">
                     <div class="inner-box wow fadeInUp" data-wow-delay="500ms">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/BRAND/brand-6.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="images/BRAND/brand-15.png" alt=""></a></figure>
                         </div>
                         <div class="content-box">
                             <h6 class="title"><a href="#">Royal Enfield</a></h6>
@@ -262,7 +224,7 @@
                 <div class="cars-block style-1 col-lg-2 col-md-6 col-sm-6 pt-3">
                     <div class="inner-box wow fadeInUp" data-wow-delay="200ms">
                         <div class="image-box">
-                            <figure class="image"><a href="#"><img src="images/BRAND/brand-10.png" alt=""></a></figure>
+                            <figure class="image"><a href="#"><img src="images/BRAND/brand-17.png" alt=""></a></figure>
                         </div>
                         <div class="content-box">
                             <h6 class="title"><a href="#">Yamaha</a></h6>
@@ -1393,7 +1355,7 @@
                     <div class="inner-box wow fadeInUp">
                         <h3 class="title">Are You Looking <br>For a Bike ?</h3>
                         <div class="text">We are committed to providing our customers with exceptional service.</div>
-                        <a href="#" class="read-more">Get Started
+                        <a href="https://wa.me/+918848110448?text=Hello%20I%20would%20like%20to%20make%20enquiry%20about%20bikes!" class="read-more">Get Started
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 14 14" fill="none">
                             <g clip-path="url(#clip0_601_692)">
                             <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="white"></path>
@@ -1415,7 +1377,7 @@
                     <div class="inner-box two wow fadeInUp" data-wow-delay="100ms">
                         <h3 class="title">Do You Want to <br>Sell a Bike ?</h3>
                         <div class="text">We are committed to providing our customers with exceptional service.</div>
-                        <a href="#" class="read-more">Get Started
+                        <a href="href=https://wa.me/+918089228568?text=Hello%20I%20would%20like%20to%20sell%20my%20bike!" class="read-more">Get Started
                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewbox="0 0 14 14" fill="none">
                             <g clip-path="url(#clip0_601_692)">
                             <path d="M13.6109 0H5.05533C4.84037 0 4.66643 0.173943 4.66643 0.388901C4.66643 0.603859 4.84037 0.777802 5.05533 0.777802H12.6721L0.113697 13.3362C-0.0382246 13.4881 -0.0382246 13.7342 0.113697 13.8861C0.18964 13.962 0.289171 14 0.388666 14C0.488161 14 0.587656 13.962 0.663635 13.8861L13.222 1.3277V8.94447C13.222 9.15943 13.3959 9.33337 13.6109 9.33337C13.8259 9.33337 13.9998 9.15943 13.9998 8.94447V0.388901C13.9998 0.173943 13.8258 0 13.6109 0Z" fill="white"></path>
@@ -1484,6 +1446,33 @@
 
 <!-- Scroll To Top -->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+
+<!-- email redirection -->
+<script>
+    function sendEmail(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get the value of the email input field
+        var userEmail = document.querySelector('.email').value;
+
+        // Check if the user is on a mobile device
+        var isMobile = /Mobi|Android/i.test(navigator.userAgent);
+
+        // If user is on a mobile device, use the Gmail app
+        if (isMobile) {
+            var gmailAppLink = 'mailto:dcmotobikez@gmail.com?subject=New%20Subscription&body=Email%20Address%20from%20subscriber%3A%20' + encodeURIComponent(userEmail);
+            window.location.href = gmailAppLink;  // Open the Gmail app or email client
+        } else {
+            // If user is on desktop, redirect to the Gmail website
+            var gmailWebLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=dcmotobikez@gmail.com&su=New%20Subscription&body=Email%20Address%20from%20subscriber%3A%20' + encodeURIComponent(userEmail);
+            window.location.href = gmailWebLink;  // Open Gmail in a web browser
+        }
+
+        return false; // Prevent the form from actually submitting
+    }
+</script>
+ <!-- email redirection end -->
+
 <script>
 //     if (window.innerWidth <= 767) {
 //         console.log("class added");
